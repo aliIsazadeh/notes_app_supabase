@@ -99,10 +99,10 @@ class _NotesPageState extends State<NotesPage> {
         child: const Icon(Icons.delete),
       ),
       child: Container(
-        padding: const EdgeInsets.all(5),
+        margin: const EdgeInsets.symmetric(vertical: 5),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            border: Border.all(width: 2, color: Colors.green)),
+            border: Border.all(width: 2, color: Theme.of(context).colorScheme.secondary)),
         child: ListTile(
           title: Text(note.title),
           subtitle: Text(note.content ?? ''),
