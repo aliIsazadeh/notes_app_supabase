@@ -1,0 +1,2 @@
+const String supabaseUrl = 'https://slemmlgwrelxofnvtyhu.supabase.co';
+const String supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsZW1tbGd3cmVseG9mbnZ0eWh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTAyODIxOTEsImV4cCI6MTk2NTg1ODE5MX0.oA3LMufU8YvCmcv86lXi313_vDyvczIkuewmXqL1Mpg';
