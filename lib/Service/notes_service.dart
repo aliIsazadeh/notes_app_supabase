@@ -19,7 +19,7 @@ class NotesService {
     final response = await _client
         .from(notes)
         .select('id, title, content, create_time, modify_time')
-        .filter("user_id",'eq',_client.auth.user()?.id )
+        // .filter("user_id",'eq',_client.auth.user()?.id )
         .execute();
 
     if (response.error == null) {

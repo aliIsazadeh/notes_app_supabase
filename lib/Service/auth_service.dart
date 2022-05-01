@@ -12,6 +12,7 @@ class AuthService {
   static const supabaseSessionKey = 'supabase_session';
 
   Future<bool> singUp(String email, String password) async {
+    print('this is running');
     final response = await _client.signUp(email, password);
     if(response.error==null){
       log('Sing up was successful for user ID : ${response.user!.id}');
@@ -24,7 +25,7 @@ class AuthService {
 
 
   Future<bool> singIn(String email , String password) async {
-
+    print('this is running');
     final response = await _client.signIn(email:email ,password:password );
     if(response.error==null){
       log('Sign in was successful for user ID : ${response.user!.id}');

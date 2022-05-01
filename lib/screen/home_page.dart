@@ -19,6 +19,7 @@ class _HomePage extends State<HomePage> {
         .singIn(_emailController.text.trim(), _passwordController.text.trim());
 
     if (success) {
+      print('the successor is running to');
       await Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const NotesPage()),
